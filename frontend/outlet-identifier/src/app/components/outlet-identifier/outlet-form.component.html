@@ -1,0 +1,12 @@
+<div class="box-body">
+	<form (ngSubmit)="onSubmit()">
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label>Address</label>
+				<input type="text" class="form-control" name="address"  [(ngModel)]=address required>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-secondary">Submit</button>
+	</form>
+	<h1>{{ result }}</h1>
+</div>
